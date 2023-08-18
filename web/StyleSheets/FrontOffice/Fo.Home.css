@@ -1,0 +1,181 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Feb 16, 2022, 6:40:38 PM
+    Author     : vinnie
+*/
+@import "../Shared.css";
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    overflow-x:hidden;
+    background: #f7f7f7;
+}
+
+a {
+    text-decoration: none;
+    /*background-color: #f3ece5;*/
+    color: white;
+}
+
+.home_big_slide {
+    margin-top: -68px;
+/*    position: relative;
+    border-radius: 0;*/
+}
+
+    .home_big_slide img {
+        height: 100vh;
+    }
+
+/*--------------------------- All Product Sliders ---------------------------*/
+.slider-text h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2.5em;
+    letter-spacing: 3px;
+    margin: 30px auto;
+    padding-left: 40px;
+}
+
+/* --------------------- Product Slider 2 --------------------- */
+
+.latest-collection-container .card-img-top {
+    width: 100%;
+    height: 19vw;
+    object-fit: cover;
+}
+
+.owl-carousel .owl-stage-outer {
+    border-radius: calc(.5rem - 1px);
+}
+
+.latest-collection-container .owl-theme .owl-dots .owl-dot span {
+    background: var(--twine);
+    opacity: .5;
+    transition: .3s;
+}
+
+.latest-collection-container .owl-theme .owl-dots .owl-dot.active span,
+.latest-collection-container .owl-theme .owl-dots .owl-dot:hover span {
+    background: var(--twine);
+    opacity: 1;
+}
+
+
+.latest-collection-container .owl-theme .owl-nav {
+    margin-top: -25px;
+}
+
+/*.owl-carousel .item {
+    text-align: center;
+}*/
+
+.latest-collection-container .owl-carousel .carousel-btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: auto;
+    height: 75%;
+    color: var(--twine);
+    font-size: 3em;
+    transition: .3s;
+    opacity: .5;
+}
+
+    .latest-collection-container .owl-carousel .carousel-btn:hover {
+        opacity: 1;
+    }
+
+.latest-collection-container .card-body {
+    color: var(--twine);
+}
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled {
+    pointer-events: none;
+    opacity: 0.2;
+}
+
+.owl-carousel .prev-slide {
+    left: -38px;
+}
+
+.owl-carousel .next-slide {
+    right: -38px;
+}
+
+.text-wrap h4{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+/* --------------------- Product Slider 3 --------------------- */
+
+.featured-container .card-img-top {
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
+}
+
+.featured-container .owl-theme .owl-nav {
+    margin-top: -13px;
+}
+
+.featured-container .card-img-top {
+    z-index: 1;
+    border-bottom-left-radius: calc(.5rem - 1px);
+    border-bottom-right-radius: calc(.5rem - 1px);
+    transition: .3s;
+}
+
+.featured-container .card-body {
+    transform: translateY(-85px);
+    transition: .3s;
+    color: var(--eunry);
+}
+
+.featured-container .owl-item:hover .card-body {
+    transform: translateY(0px);
+}
+
+.featured-container .owl-item:hover .card-img-top {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.featured-container .owl-carousel .carousel-btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: auto;
+    height: 75%;
+    color: var(--eunry);
+    font-size: 3.8em;
+    transition: .3s;
+    opacity: .5;
+}
+
+    .featured-container .owl-carousel .carousel-btn:hover {
+        opacity: 1;
+    }
+
+.featured-container .owl-theme .owl-dots .owl-dot span {
+    background: var(--eunry);
+    opacity: .5;
+    transition: .3s;
+}
+
+.featured-container .owl-theme .owl-dots .owl-dot.active span,
+.featured-container .owl-theme .owl-dots .owl-dot:hover span {
+    background: var(--eunry);
+    opacity: 1;
+}
+
+/*--------------------------- All Product Sliders ---------------------------*/

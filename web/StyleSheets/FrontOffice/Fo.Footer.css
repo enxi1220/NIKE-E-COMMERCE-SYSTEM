@@ -1,0 +1,22 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 23, 2022, 3:42:16 PM
+    Author     : vinnie chin
+*/
+
+/* --------------------- Home Footer --------------------- */
+.home-footer {
+    color: var(--heathered-gray);
+}
+
+
+.footer-social-icon i {
+    font-size: 15px;
+}
+
+.footer-social-icon a:hover {
+    border: 1.9px solid var(--eunry);
+}

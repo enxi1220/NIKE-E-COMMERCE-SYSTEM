@@ -1,0 +1,39 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 13 Feb 2022, 6:25:51 pm
+    Author     : Lim En Xi
+*/
+
+:root {
+    --heathered-gray: #B6A695; /*secondary*/
+    --twine: #BC8557; /*unuse*/
+    --eunry: #D1BA9C; /*info*/
+    --coffee: #6F6559; /*primary*/
+    --chinese-silver: rgb(200, 205, 208);
+    --chinese-silver: #C8CDD0;
+    --white: #f2f2f2; /*light*/
+    --black: #1D1D1F; /*dark*/
+    /*--heathered-gray: rgb(182, 166, 149); secondary*/
+    /*--twine: rgb(188, 133, 87); unuse*/
+    /*--eunry: rgb(209, 186, 156); info*/
+    /*--coffee: rgb(111, 101, 89); primary*/
+    /*--white: rgb(242, 242, 242); light*/
+    /*--black: rgb(29, 29, 31); dark*/
+}
+
+/*for datatable, as this file will be loaded after, will overwrite previous style*/
+table.dataTable > thead .sorting:before,
+table.dataTable > thead .sorting:after {
+    bottom: 1.3rem;
+    font-size:12px;
+}
+
+table.dataTable > thead .sorting:after {
+    margin-right: 0px;
+}
+table.dataTable > thead .sorting:before {
+    margin-right: 3px;
+}

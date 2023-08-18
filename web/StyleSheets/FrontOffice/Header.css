@@ -1,0 +1,353 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Feb 18, 2022, 2:19:34 AM
+    Author     : asus
+*/
+@import "../Shared.css";
+
+
+*,html{
+    scroll-behavior: smooth;
+
+}
+
+:root{
+    scrollbar-color: #BCACA4;
+    scrollbar-width: thin !important;
+    background-colo:var(--coffee);
+}
+
+/*DEFAULT*/
+a{
+    text-decoration:none;
+    /*background-color: #f3ece5;*/
+    color: white;
+}
+
+a:hover{
+    text-decoration:none;
+}
+
+li{
+    list-style:none;
+}
+
+/*em{
+    color:#8C5C44;
+    font-style:normal;
+    font-size: 37px;
+    position: relative;
+    top: 30px;
+}*/
+
+.scrolled_header{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:fixed;
+    top:0;
+    z-index:999;
+}
+
+.scrolled_header #navbar a,
+.top_header a{
+    font-size: 19px;
+}
+
+.scrolled_header #navbar a:hover,
+.top_header a:hover{
+    transition: .3s;
+    color: var(--eunry);
+    text-decoration: none;
+}
+
+/*.scrolled_header .banner{
+    width:80%;
+    padding:10px 0px;
+    color:#1e1e1e;
+}
+
+.scrolled_header .banner span:nth-child(1) a{
+    margin:0px 5px;
+    font-size:13px;
+    color:#fff;
+}
+
+header .banner span:nth-child(1) em{
+    color:#000;
+}
+
+header .banner span:nth-child(2) a{
+    margin:0px 5px;
+    background:#fff;
+    color:#000;
+    border-radius:50%;
+    height:20px;
+    width:20px;
+    padding:5px;
+    float:right;
+    text-align:center;
+    box-shadow:0px 6px -16px 6px rgba(1,1,1,0.5);
+}
+
+header .nav{
+    position:fixed;
+    top:3em;
+    width:80%;
+    box-shadow:0px 6px 16px -6px rgba(1,1,1,0.5);
+     background:#5c4434; 
+    background:var(--coffee);
+    border-radius:0px;
+    padding:30px;
+    padding-left: 0px;
+    transition:0.5s;
+}
+
+header .nav a{
+    display:inline-block;
+    margin:0px 30px;
+    text-decoration:none;
+    color:#ffffff;
+    font-family: copperplate;
+    transition:0.5s;
+
+}
+
+header .nav a:hover:not(:first-child){
+    color:#dca8b0;
+}
+
+header .nav a.active{
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+    box-shadow: inset 0px 0px 1px #BABECC, inset -1px -1px 2px #FFF;
+    padding:10px 20px;
+    border-radius:40px;
+}
+
+header .nav .dropdown li:before{
+    content:"\f0a4";
+    font-family:"FontAwesome";
+    color:#e9bc79;
+    margin:0px 4px;
+}
+
+header .nav .icon{
+    display:none;
+}*/
+
+.dropbtn{
+    background:transparent;
+    border:0;
+    outline:0;
+    font-size:17px;
+    margin:0px 10px;
+    font-family: 'Yusei Magic', sans-serif;
+    transition:0.5s;
+}
+
+.dropbtn:hover{
+    color:#3399ff;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top:20px;
+}
+
+.dropdown-content:before {
+    content:"\f0d8";
+    font-family:"FontAwesome";
+    position:absolute;
+    text-align:center;
+    left:45%;
+    top:-15px;
+    font-size:20px;
+    color:gray;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color:#3399ff;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.top_nav{
+        width: 60%;
+    height: 108px;
+    background:transparent;
+
+}
+
+.top_nav_container{
+        padding: 0; 
+    background:transparent;
+    box-shadow: none; 
+    margin:auto;
+
+}
+
+.top_nav i,
+.scrolled_header i{
+padding-right: 13px;
+}
+
+
+.profile_tab{
+    position: absolute; right: 5em;
+}
+
+#navbar {
+    /* background-color: #5c4434; */
+    background-color: #000000;
+    position: fixed;
+    top: -113px;
+    width: 100%;
+    display: block;
+    z-index:999;
+    padding: 25px 0px;
+    transition: top 0.3s;
+    box-shadow:0px 6px 16px -6px rgba(1,1,1,0.5);
+    padding-right: 38px;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+
+#navbar .dropbtn{
+    background:transparent;
+    border:0;
+    outline:0;
+    font-size:17px;
+    margin:20px 10px;
+    font-family: 'Yusei Magic', sans-serif;
+    transition:0.5s;
+}
+/* Dropdown Content (Hidden by Default) */
+#navbar .dropdown-content {
+    min-width: auto;
+    margin-top:60px;
+}
+
+#navbar a:not(:first-child), #navbar .dropbtn, #navbar .dropdown{
+    float:right;
+}
+
+#navbar .dropdown a{
+    float:left;
+}
+
+
+@media (max-width:900px){
+    #navbar{
+        display:none;
+    }
+    header .banner{
+        display:none;
+    }
+    header .nav a.active{
+        width:200px;
+    }
+    header .nav{
+        position:fixed;
+        top:0em;
+        width:100%;
+        box-shadow:0px 6px 16px -6px rgba(1,1,1,0.5);
+        background:#fff;
+        border-radius:0px;
+        padding:10px;
+        transition:0.5s;
+    }
+}
+
+.bb, .bb::before, .bb::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.bb {
+    width: 80px;
+    height: 80px;
+    /* position: absolute;
+    right:0;
+    top:0; */
+margin-top: 15px;
+
+margin-left: 50px;
+    background: url("https://www.shillingtoneducation.com/content-blog/uploads/2015/08/nike-swoosh-logo-png-the-top-10-most-popular-shoe-brands-everyone-is-wearing-top-10-rate-pict-1200x646.png") no-repeat 100%/100% rgba(255, 255, 255);
+    /* color: rgb(255,255,255); */
+    color: #f7f0e8;
+    box-shadow: inset 0 0 0 1.5px rgba(0, 0, 0, 0.5);
+}
+.bb::before, .bb::after {
+    content: '';
+    z-index: 1;
+    margin: -5%;
+    box-shadow: inset 0 0 0 2px;
+    animation: clipMe 8s linear infinite;
+    transition: 0.3s;
+}
+.bb::before {
+    animation-delay: -4s;
+}
+.bb:hover::after, .bb:hover::before {
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+    color: rgb(255,255,255,0.5);
+    /*    animation: clipMe2 8s linear infinite;*/
+}
+
+@keyframes clipMe {
+    0%, 100% {
+        clip: rect(0px, 88px, 2px, 0px);
+    }
+    25% {
+        clip: rect(0px, 2px, 88px, 0px);
+    }
+    50% {
+        clip: rect(86px, 88px, 88px, 0px);
+    }
+    75% {
+        clip: rect(0px, 88px, 88px, 86px);
+    }
+
+}
+
+.dropdown-menu{
+    border-radius: .5em;
+}
+
+

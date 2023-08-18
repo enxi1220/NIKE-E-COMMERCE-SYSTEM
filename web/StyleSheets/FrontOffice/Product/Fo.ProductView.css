@@ -1,0 +1,162 @@
+ /*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/*
+    Created on : Feb 27, 2022, 3:16:05 AM
+    Author     : vinnie chin
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Pontano+Sans');
+@import "../../Shared.css";
+
+
+.container img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.carousel-inner .w-100{
+    height: 50vh;
+}
+
+.carousel-indicators .w-100 {
+  width: 100% !important;
+    height: 5rem;
+}
+
+.btn-check:checked+.btn-outline-info, .btn-check:active+.btn-outline-info {
+    color: var(--coffee);
+    background-color: #d1ba9c;
+}
+
+input[type=number]{
+    width: 66px;
+  
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+nav {
+  display: block;
+  li {
+    font-size: 1.125rem;
+    margin: 0;
+  }
+}
+
+.flex-nav ul {
+  position: absolute;
+  z-index: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: col;
+  display: none;
+  width: 100%;
+  left: 0;
+  padding: 1rem;
+  background: #fff;
+  text-align: center;
+  &.active {
+    display: flex;
+  }
+  li {
+    margin: 0.5rem 0;
+  }
+}
+
+.toggle-nav {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin: 1rem 0;
+  i {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin: 0 0 0 0.5rem;
+  }
+}
+
+#highlight {
+  color: #333;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+
+.price {
+  margin: 0;
+}
+
+/*product slider*/
+.latest-collection-container .card-img-top {
+    width: 100%;
+    height: 19vw;
+    object-fit: cover;
+}
+
+.owl-carousel .owl-stage-outer {
+    border-radius: calc(.5rem - 1px);
+}
+
+.latest-collection-container .owl-theme .owl-dots .owl-dot span {
+    background: var(--twine);
+    opacity: .5;
+    transition: .3s;
+}
+
+.latest-collection-container .owl-theme .owl-dots .owl-dot.active span,
+.latest-collection-container .owl-theme .owl-dots .owl-dot:hover span {
+    background: var(--twine);
+    opacity: 1;
+}
+
+
+.latest-collection-container .owl-theme .owl-nav {
+    margin-top: -25px;
+}
+
+/*.owl-carousel .item {
+    text-align: center;
+}*/
+
+.latest-collection-container .owl-carousel .carousel-btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: auto;
+    height: 75%;
+    color: var(--twine);
+    font-size: 3em;
+    transition: .3s;
+    opacity: .5;
+}
+
+    .latest-collection-container .owl-carousel .carousel-btn:hover {
+        opacity: 1;
+    }
+
+.latest-collection-container .card-body {
+    color: var(--twine);
+}
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled {
+    pointer-events: none;
+    opacity: 0.2;
+}
+
+.owl-carousel .prev-slide {
+    left: -38px;
+}
+
+.owl-carousel .next-slide {
+    right: -38px;
+}
